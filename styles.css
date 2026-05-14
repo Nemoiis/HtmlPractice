@@ -1,14 +1,88 @@
-.id-card{
-    max-width: 400px;
-    max-height: 400px;
-    margin: 0 auto;
-    border: 5px solid gray;
+body{
+    background-color: rgb(255, 255, 255);
 }
 
-#title{
-    text-align: center;
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(255, 255, 255);
+    margin: -10px;
+    padding: 25px;
+    background-color:#8c8f86;
+
+
 }
 
-h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 48px;
+}
+
+.nav-bar li{
+    font-family: "Pinyon Script", cursive;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+    transition: color .5s ease;
+}
+
+.nav-bar a:visited{
+    color: white; 
+}
+
+.nav-bar a:hover{
+    color: #2C1809;
+}
+.dropdwn{
+    position:relative;
+}
+.dropdwn ul{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    width:225px;
+    background-color: #e5ded5;
+    top:   100%;
+    padding-top: 15px;
+}
+
+
+.dropdwn li{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Sen, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: .5em;
+}
+
+.dropdwn ul a{
+    display: block;
+    padding: 10px 20px;
+}
+
+.dropdwn ul li:hover{
+    display:block;
+    background-color:#aba191 ;
+}
+.dropdwn:hover ul{
+    display:block;
+}
+
+.nav-bar .dropdwn ul a {
+    color: black;
+}
+.nav-bar .dropdwn ul li a:hover {
+    color: white;
 }
